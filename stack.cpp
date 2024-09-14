@@ -34,4 +34,8 @@ int main(){
       cout<<st1.top();
       st1.pop();
    }
+
+   //application-->Back tracking,DFS,
+   //function call,arinthetic expression,
+   //data reverse,delimiter check,
 }
