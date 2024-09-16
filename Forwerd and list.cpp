@@ -1,4 +1,5 @@
 #include <iostream>
+#include<algorithm>
 #include<forward_list>
 using namespace std;
 int main(){
@@ -10,5 +11,13 @@ int main(){
      lis.push_front(15);
     for(int i:lis){
         cout<<i<<" ";
+    }
+    cout<<endl;
+    auto it=find(lis.begin(),lis.end(),122);
+    if(it!=lis.end()){
+        cout<<"Found";
+    }
+    else{
+        cout<<"Not Found";
     }
 }
