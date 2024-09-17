@@ -9,10 +9,12 @@ int main(){
      lis.push_front(13);
      lis.push_front(14);
      lis.push_front(15);
+     lis.pop_front();
     for(int i:lis){
         cout<<i<<" ";
     }
     cout<<endl;
+
     auto it=find(lis.begin(),lis.end(),122);
     if(it!=lis.end()){
         cout<<"Found";
