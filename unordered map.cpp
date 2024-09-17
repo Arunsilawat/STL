@@ -11,7 +11,10 @@ int main(){
     m["nidhi"]=50;
     unordered_map<string,int>:: iterator it;
     for(auto it=m.begin();it!=m.end();it++){
-        cout<<"First---> "<<(*it).first<<"Second--> "<<(*it).second<<endl;;
+        cout<<"First---> "<<(*it).first<<" Second--> "<<(*it).second<<endl;
     }
-
+    cout<<endl;
+    for(auto i:m){
+         cout<<"First---> "<<i.first<<" Second--> "<<i.second<<endl;
+    }
 }
