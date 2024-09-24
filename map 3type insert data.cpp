@@ -35,6 +35,7 @@ int main(){
   }
   cout<<endl;
   //--------------------unordered multimap--------------------
+
   unordered_multimap<int,string>m2;
 
   m2.insert({2,"banana"});
@@ -49,4 +50,20 @@ int main(){
   for(auto i:m2){
     cout<<i.first<<" "<<i.second<<endl;
   }
+  //find element------>
+
+  //unordered_multimap<int,string> :: iterator it3 ;
+  auto it3=m2.find(3);
+  m2.erase(it3);
+  //if(it3==m2.end()){
+    //cout<<"Not Found";
+  //}
+  //else{
+    //cout<<(*it3).first<<" "<<(*it3).second<<endl;
+  //}
+  cout<<endl;
+  for(auto i:m2){
+    cout<<i.first<<" "<<i.second<<endl;
+  }
+
 }
